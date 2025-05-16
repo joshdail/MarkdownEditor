@@ -45,15 +45,14 @@ let view (model: Model) (dispatch: Msg -> unit) =
                 TextBox.verticalAlignment VerticalAlignment.Stretch
             ]
             // Preview pane
-
-            ViewBuilder.Create<MarkdownScrollViewer>(
-                [ Grid.column 1
-                  AttrBuilder<MarkdownScrollViewer>.CreateProperty(
-                      MarkdownScrollViewer.MarkdownProperty, model.Text, ValueNone
-                  )
-                  AttrBuilder<MarkdownScrollViewer>.CreateProperty(
-                      ContentControl.PaddingProperty, Thickness(10.0), ValueNone
-                  ) ]
-            )
+            ViewBuilder.Create<MarkdownScrollViewer>[
+                Grid.column 1
+                (AttrBuilder<MarkdownScrollViewer>.CreateProperty(
+                    MarkdownScrollViewer.MarkdownProperty, model.Text, ValueNone
+                ))
+                (AttrBuilder<MarkdownScrollViewer>.CreateProperty(
+                    ContentControl.PaddingProperty, Thickness(10.0), ValueNone
+                ))
+            ]
         ]
     ]
