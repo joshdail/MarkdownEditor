@@ -1,11 +1,14 @@
 module Main
 
+open Avalonia
 open Avalonia.FuncUI.DSL
+open Avalonia.FuncUI.Types
+open Avalonia.FuncUI.Builder
 open Avalonia.Controls
 open Avalonia.Controls.Primitives
 open Avalonia.Layout
-open Avalonia.FuncUI.Types
 open Avalonia.Media
+open Markdown.Avalonia
 open Markdig
 open Elmish
 
@@ -42,16 +45,15 @@ let view (model: Model) (dispatch: Msg -> unit) =
                 TextBox.verticalAlignment VerticalAlignment.Stretch
             ]
             // Preview pane
-            ScrollViewer.create [
-                Grid.column 1
-                ScrollViewer.content (
-                    TextBlock.create [
-                        TextBlock.text html
-                        TextBlock.textWrapping TextWrapping.Wrap
-                        TextBlock.padding 10.0
-                        TextBlock.fontFamily "sans serif"
-                    ]
-                )
-            ]
+
+            ViewBuilder.Create<MarkdownScrollViewer>(
+                [ Grid.column 1
+                  AttrBuilder<MarkdownScrollViewer>.CreateProperty(
+                      MarkdownScrollViewer.MarkdownProperty, model.Text, ValueNone
+                  )
+                  AttrBuilder<MarkdownScrollViewer>.CreateProperty(
+                      ContentControl.PaddingProperty, Thickness(10.0), ValueNone
+                  ) ]
+            )
         ]
     ]

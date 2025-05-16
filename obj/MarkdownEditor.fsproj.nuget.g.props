@@ -14,14 +14,15 @@
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)skiasharp.nativeassets.webassembly/2.88.9/buildTransitive/netstandard1.0/SkiaSharp.NativeAssets.WebAssembly.props" Condition="Exists('$(NuGetPackageRoot)skiasharp.nativeassets.webassembly/2.88.9/buildTransitive/netstandard1.0/SkiaSharp.NativeAssets.WebAssembly.props')" />
-    <Import Project="$(NuGetPackageRoot)harfbuzzsharp.nativeassets.webassembly/7.3.0.3/buildTransitive/netstandard1.0/HarfBuzzSharp.NativeAssets.WebAssembly.props" Condition="Exists('$(NuGetPackageRoot)harfbuzzsharp.nativeassets.webassembly/7.3.0.3/buildTransitive/netstandard1.0/HarfBuzzSharp.NativeAssets.WebAssembly.props')" />
     <Import Project="$(NuGetPackageRoot)avalonia/11.3.0/buildTransitive/Avalonia.props" Condition="Exists('$(NuGetPackageRoot)avalonia/11.3.0/buildTransitive/Avalonia.props')" />
+    <Import Project="$(NuGetPackageRoot)harfbuzzsharp.nativeassets.webassembly/7.3.0.3/buildTransitive/netstandard1.0/HarfBuzzSharp.NativeAssets.WebAssembly.props" Condition="Exists('$(NuGetPackageRoot)harfbuzzsharp.nativeassets.webassembly/7.3.0.3/buildTransitive/netstandard1.0/HarfBuzzSharp.NativeAssets.WebAssembly.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgMarkdig Condition=" '$(PkgMarkdig)' == '' ">/Users/josh/.nuget/packages/markdig/0.41.1</PkgMarkdig>
-    <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">/Users/josh/.nuget/packages/fsharp.core/9.0.201</PkgFSharp_Core>
     <PkgAvalonia_BuildServices Condition=" '$(PkgAvalonia_BuildServices)' == '' ">/Users/josh/.nuget/packages/avalonia.buildservices/0.0.31</PkgAvalonia_BuildServices>
     <PkgAvalonia Condition=" '$(PkgAvalonia)' == '' ">/Users/josh/.nuget/packages/avalonia/11.3.0</PkgAvalonia>
+    <PkgMarkdown_Avalonia Condition=" '$(PkgMarkdown_Avalonia)' == '' ">/Users/josh/.nuget/packages/markdown.avalonia/11.0.2</PkgMarkdown_Avalonia>
+    <PkgMarkdig Condition=" '$(PkgMarkdig)' == '' ">/Users/josh/.nuget/packages/markdig/0.41.1</PkgMarkdig>
+    <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">/Users/josh/.nuget/packages/fsharp.core/9.0.201</PkgFSharp_Core>
     <PkgAvalonia_Themes_Fluent Condition=" '$(PkgAvalonia_Themes_Fluent)' == '' ">/Users/josh/.nuget/packages/avalonia.themes.fluent/11.3.0</PkgAvalonia_Themes_Fluent>
     <PkgAvalonia_FuncUI_Elmish Condition=" '$(PkgAvalonia_FuncUI_Elmish)' == '' ">/Users/josh/.nuget/packages/avalonia.funcui.elmish/1.5.1</PkgAvalonia_FuncUI_Elmish>
     <PkgAvalonia_Desktop Condition=" '$(PkgAvalonia_Desktop)' == '' ">/Users/josh/.nuget/packages/avalonia.desktop/11.3.0</PkgAvalonia_Desktop>

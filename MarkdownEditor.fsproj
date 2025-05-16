@@ -17,6 +17,7 @@
     <PackageReference Include="Avalonia.FuncUI.Elmish" Version="1.5.1" />
     <PackageReference Include="Avalonia.Themes.Fluent" Version="11.3.0" />
     <PackageReference Include="Markdig" Version="0.41.1" />
+    <PackageReference Include="Markdown.Avalonia" Version="11.0.2" />
   </ItemGroup>
 
 </Project>

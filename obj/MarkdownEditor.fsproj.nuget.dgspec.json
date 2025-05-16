@@ -65,6 +65,11 @@
               "target": "Package",
               "version": "[0.41.1, )",
               "generatePathProperty": true
+            },
+            "Markdown.Avalonia": {
+              "target": "Package",
+              "version": "[11.0.2, )",
+              "generatePathProperty": true
             }
           },
           "imports": [

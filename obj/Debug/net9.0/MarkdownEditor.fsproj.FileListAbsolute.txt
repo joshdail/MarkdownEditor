@@ -78,3 +78,17 @@
 /Users/josh/Local/Projects/MarkdownEditor/obj/Debug/net9.0/ref/MarkdownEditor.dll
 /Users/josh/Local/Projects/MarkdownEditor/bin/Debug/net9.0/Avalonia.Themes.Fluent.dll
 /Users/josh/Local/Projects/MarkdownEditor/obj/Debug/net9.0/MarkdownEditor.sourcelink.json
+/Users/josh/Local/Projects/MarkdownEditor/bin/Debug/net9.0/AvaloniaEdit.dll
+/Users/josh/Local/Projects/MarkdownEditor/bin/Debug/net9.0/Avalonia.Svg.dll
+/Users/josh/Local/Projects/MarkdownEditor/bin/Debug/net9.0/ColorTextBlock.Avalonia.dll
+/Users/josh/Local/Projects/MarkdownEditor/bin/Debug/net9.0/ExCSS.dll
+/Users/josh/Local/Projects/MarkdownEditor/bin/Debug/net9.0/Fizzler.dll
+/Users/josh/Local/Projects/MarkdownEditor/bin/Debug/net9.0/HtmlAgilityPack.dll
+/Users/josh/Local/Projects/MarkdownEditor/bin/Debug/net9.0/Markdown.Avalonia.Full.dll
+/Users/josh/Local/Projects/MarkdownEditor/bin/Debug/net9.0/Markdown.Avalonia.Html.dll
+/Users/josh/Local/Projects/MarkdownEditor/bin/Debug/net9.0/Markdown.Avalonia.Svg.dll
+/Users/josh/Local/Projects/MarkdownEditor/bin/Debug/net9.0/Markdown.Avalonia.SyntaxHigh.dll
+/Users/josh/Local/Projects/MarkdownEditor/bin/Debug/net9.0/Markdown.Avalonia.dll
+/Users/josh/Local/Projects/MarkdownEditor/bin/Debug/net9.0/ShimSkiaSharp.dll
+/Users/josh/Local/Projects/MarkdownEditor/bin/Debug/net9.0/Svg.Custom.dll
+/Users/josh/Local/Projects/MarkdownEditor/bin/Debug/net9.0/Svg.Model.dll
