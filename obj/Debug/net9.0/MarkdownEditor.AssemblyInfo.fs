@@ -10,7 +10,7 @@ open System.Reflection
 [<assembly: System.Reflection.AssemblyCompanyAttribute("MarkdownEditor")>]
 [<assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")>]
 [<assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")>]
-[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")>]
+[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0211babb5f830f414c45258f05595cd9639b72f7")>]
 [<assembly: System.Reflection.AssemblyProductAttribute("MarkdownEditor")>]
 [<assembly: System.Reflection.AssemblyTitleAttribute("MarkdownEditor")>]
 [<assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")>]

@@ -77,3 +77,4 @@
 /Users/josh/Local/Projects/MarkdownEditor/obj/Debug/net9.0/MarkdownEditor.genruntimeconfig.cache
 /Users/josh/Local/Projects/MarkdownEditor/obj/Debug/net9.0/ref/MarkdownEditor.dll
 /Users/josh/Local/Projects/MarkdownEditor/bin/Debug/net9.0/Avalonia.Themes.Fluent.dll
+/Users/josh/Local/Projects/MarkdownEditor/obj/Debug/net9.0/MarkdownEditor.sourcelink.json

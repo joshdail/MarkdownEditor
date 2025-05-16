@@ -23,11 +23,13 @@ let update (msg: Msg) (model: Model) : Model * Cmd<Msg> =
     | TextChanged newText -> {model with Text = newText}, Cmd.none
 
 let view (model: Model) (dispatch: Msg -> unit) =
+    let html = Markdown.ToHtml(model.Text)
     Grid.create [
-        // Grid.rowDefinitions "Auto,*"
+        Grid.columnDefinitions"*,*"
         Grid.children [
+            // Editing pane
             TextBox.create [
-                Grid.row 0
+                Grid.column 0
                 TextBox.text model.Text
                 TextBox.acceptsReturn true
                 TextBox.verticalScrollBarVisibility ScrollBarVisibility.Auto
@@ -38,6 +40,18 @@ let view (model: Model) (dispatch: Msg -> unit) =
                 TextBox.padding 10.0
                 TextBox.horizontalAlignment HorizontalAlignment.Stretch
                 TextBox.verticalAlignment VerticalAlignment.Stretch
+            ]
+            // Preview pane
+            ScrollViewer.create [
+                Grid.column 1
+                ScrollViewer.content (
+                    TextBlock.create [
+                        TextBlock.text html
+                        TextBlock.textWrapping TextWrapping.Wrap
+                        TextBlock.padding 10.0
+                        TextBlock.fontFamily "sans serif"
+                    ]
+                )
             ]
         ]
     ]
